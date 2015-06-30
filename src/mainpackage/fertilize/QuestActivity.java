@@ -22,7 +22,7 @@ public class QuestActivity extends Activity {
 	int qid=0;
 	double cfuser=0;
 	double cfpakar=0;
-	double cf,cf1,cf2,cf3,cf4,cf5, cfcom;
+	double cf, cfcombine;
 	Question currentQ;
 	TextView txtQuestion;
 	RadioButton rda, rdb, rdc, rdd, rde, rdf;
@@ -58,20 +58,30 @@ public class QuestActivity extends Activity {
 //				}
 				cfpakar = currentQ.getANSWER();
 				if(answer == rda){
-					score = score + (cfpakar + 0);
+					cfuser = 0;
 				} else if(answer == rdb) {
-					score = score + (cfpakar + 0.1);
+					cfuser = 0.1;
 				} else if (answer == rdc){
-					score = score + (cfpakar + 0.2);
+					cfuser = 0.2;
 				} else if (answer == rdd){
-					score = score + (cfpakar + 0.6);
+					cfuser = 0.6;
 				} else if (answer == rde){
-					score = score + (cfpakar + 0.8);
+					cfuser = 0.8;
 				} else {
-					score = score + (cfpakar + 1);
+					cfuser = 1;
+				}
+				
+				//score = score + (cfpakar * cfuser);
+				cf = cfpakar * cfuser;
+				if (qid == 1){
+					cfcombine = cfpakar * cfuser;
+				}else {
+					cfcombine = cfcombine + (cf  * (1-cfcombine)); 
+					score = cfcombine * 100;
 				}
 				
 				if(qid<5){					
+					cf = cfpakar * cfuser;
 					currentQ=QuestList.get(qid);
 					setQuestionView();
 				}else{
