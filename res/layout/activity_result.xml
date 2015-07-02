@@ -4,23 +4,13 @@
    android:layout_height="match_parent"
     tools:context=".Result" >
 
-    <LinearLayout
+   <LinearLayout
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_alignParentBottom="true"
-       android:layout_alignParentLeft="true"
-       android:layout_alignParentRight="true"
        android:layout_alignParentTop="true"
        android:orientation="vertical"
        android:layout_margin="20px" >
-       
-	<RatingBar
-           android:id="@+id/ratingBar1"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:numStars="5"
-           android:stepSize="1"/>
-	
+
 	<TextView
            android:id="@+id/textResult"
            android:layout_width="wrap_content"
@@ -28,6 +18,12 @@
            android:layout_weight="0.08"
            android:text="Large Text"
            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	<TextView android:id="@+id/percentage"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 	
 	</LinearLayout>
 

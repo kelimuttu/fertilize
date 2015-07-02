@@ -23,16 +23,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="mainpackage.fertilize.QuestActivity"
+            android:name=".QuestActivity"
             android:label="@string/title_activity_quest" >
         </activity>
         <activity
-            android:name="mainpackage.fertilize.QuestActivity"
+            android:name=".QuestActivity"
             android:label="@string/title_activity_quest" >
         </activity>
         <activity
             android:name=".Result"
             android:label="@string/title_activity_result" >
+        </activity>
+        <activity
+            android:name=".Gejala"
+            android:label="@string/title_activity_gejala" >
+        </activity>
+        <activity
+            android:name=".Bantuan"
+            android:label="@string/title_activity_bantuan" >
+        </activity>
+        <activity
+            android:name=".Profil"
+            android:label="@string/title_activity_profil" >
         </activity>
     </application>
 

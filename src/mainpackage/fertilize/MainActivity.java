@@ -24,8 +24,14 @@ public class MainActivity extends Activity {
 
 	public void changeActivity(View v) {
 		Intent it; 
-		if(findViewById(R.id.quest) == v){
+		if(findViewById(R.id.gejala) == v){
+			it = new Intent(this, Gejala.class);
+		} else if(findViewById(R.id.quest) == v){
 			it = new Intent(this, QuestActivity.class);
+		} else if(findViewById(R.id.bantuan) == v){
+			it = new Intent(this, Bantuan.class);
+		} else if(findViewById(R.id.profil) == v){
+			it = new Intent(this, Profil.class);
 		} else {
 			it = new Intent(this, MainActivity.class);
 		}

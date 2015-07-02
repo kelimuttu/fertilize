@@ -1,6 +1,8 @@
 package mainpackage.fertilize;
 
+import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,34 +13,39 @@ public class Result extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+//		super.onCreate(savedInstanceState);
+//		setContentView(R.layout.activity_result);
+//		getActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		ActionBar actionBar = getActionBar();
+		actionBar.setDisplayHomeAsUpEnabled(true);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_result);
-getActionBar().setDisplayHomeAsUpEnabled(true);
 		
 		//get rating bar object
-				RatingBar bar=(RatingBar)findViewById(R.id.ratingBar1); 
-				bar.setNumStars(5);
-				bar.setStepSize(0.5f);
+//				RatingBar bar=(RatingBar)findViewById(R.id.ratingBar1); 
+//				bar.setNumStars(4);
+//				bar.setStepSize(1f);
 				//get text view
 				TextView t=(TextView)findViewById(R.id.textResult);
+				TextView thasil=(TextView)findViewById(R.id.percentage);
 				//get score
 				Bundle b = getIntent().getExtras();
 				double score= b.getDouble("score");
-				t.setText(String.valueOf(score));
+				int precentage = (int) score;
+				//int score= b.getInt("score");
+				t.setText(String.valueOf(precentage));
 				//t.setText(score);
-//				//display score
-//				bar.setRating(score);
-//				switch (score)
-//				{
-//				case 1:
-//				case 2: t.setText("Belajar lagi yaa..");
-//				break;
-//				case 3:
-//				case 4:t.setText("Selamat! Kamu nyaris menjawab semua pertanyaan dengan benar");
-//				break;
-//				case 5:t.setText("Hebat! Kamu menjawab semua pertanyaan dengan benar :D ");
-//				break;
-//				}
+				
+				if( (precentage > 0) && (precentage <= 50)){
+					thasil.setText("Kemungkinan kecil");
+				} else if((precentage > 50) && (precentage <= 79)){
+					thasil.setText("Kemungkinan");
+				} else if((precentage > 79) && (precentage <= 99)){
+					thasil.setText("Kemungkinan besar");
+				} else if(precentage == 100){
+					thasil.setText("Sangat yakin!");
+				}
 	}
 
 	@Override
@@ -46,5 +53,15 @@ getActionBar().setDisplayHomeAsUpEnabled(true);
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.result, menu);
 		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
+	    startActivityForResult(myIntent, 0);
+	    return true;
 	}
 }

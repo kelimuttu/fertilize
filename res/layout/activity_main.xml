@@ -8,13 +8,58 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mainpackage.fertilize.MainActivity" >
 
-    <Button
-        android:id="@+id/quest"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30sp"
-        android:layout_marginEnd="30sp"
-        android:text="Lakukan Test"
-        android:onClick="changeActivity" />
+    <TextView android:text="@string/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:id="@+id/judul"/>
+
+     <Button
+         android:id="@+id/gejala"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/judul"
+         android:layout_centerHorizontal="true"
+         android:layout_marginEnd="30sp"
+         android:layout_marginStart="30sp"
+         android:layout_marginTop="17dp"
+         android:onClick="changeActivity"
+         android:text="Gejala" />
+
+     <Button
+         android:id="@+id/quest"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/gejala"
+         android:layout_centerHorizontal="true"
+         android:layout_marginEnd="30sp"
+         android:layout_marginStart="30sp"
+         android:layout_marginTop="14dp"
+         android:onClick="changeActivity"
+         android:text="Diagnosa" />
+
+     <Button
+         android:id="@+id/bantuan"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/quest"
+         android:layout_centerHorizontal="true"
+         android:layout_marginEnd="30sp"
+         android:layout_marginStart="30sp"
+         android:layout_marginTop="14dp"
+         android:onClick="changeActivity"
+         android:text="Bantuan" />
+
+     <Button
+         android:id="@+id/profil"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/bantuan"
+         android:layout_centerHorizontal="true"
+         android:layout_marginEnd="30sp"
+         android:layout_marginStart="30sp"
+         android:layout_marginTop="14dp"
+         android:onClick="changeActivity"
+         android:text="Profil" />
 
 </RelativeLayout>
