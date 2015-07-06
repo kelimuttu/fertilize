@@ -22,7 +22,10 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int ad=0x7f020000;
+        public static final int asd=0x7f020001;
+        public static final int bg=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
     }
     public static final class id {
         public static final int action_settings=0x7f080020;
@@ -76,39 +79,40 @@ public final class R {
         public static final int result=0x7f070005;
     }
     public static final class string {
-        public static final int B01=0x7f050019;
-        public static final int B02=0x7f05001a;
-        public static final int B03=0x7f05001b;
-        public static final int B04=0x7f05001c;
-        public static final int G01=0x7f050008;
-        public static final int G02=0x7f050009;
-        public static final int G03=0x7f05000a;
-        public static final int G04=0x7f05000b;
-        public static final int G05=0x7f05000c;
-        public static final int G06=0x7f05000d;
-        public static final int G07=0x7f05000e;
-        public static final int G08=0x7f05000f;
-        public static final int G09=0x7f050010;
-        public static final int G10=0x7f050011;
-        public static final int G11=0x7f050012;
-        public static final int G12=0x7f050013;
-        public static final int G13=0x7f050014;
-        public static final int G14=0x7f050015;
-        public static final int G15=0x7f050016;
-        public static final int P01=0x7f05001f;
-        public static final int P02=0x7f050020;
-        public static final int P03=0x7f050021;
+        public static final int B01=0x7f05001a;
+        public static final int B02=0x7f05001b;
+        public static final int B03=0x7f05001c;
+        public static final int B04=0x7f05001d;
+        public static final int G01=0x7f050009;
+        public static final int G02=0x7f05000a;
+        public static final int G03=0x7f05000b;
+        public static final int G04=0x7f05000c;
+        public static final int G05=0x7f05000d;
+        public static final int G06=0x7f05000e;
+        public static final int G07=0x7f05000f;
+        public static final int G08=0x7f050010;
+        public static final int G09=0x7f050011;
+        public static final int G10=0x7f050012;
+        public static final int G11=0x7f050013;
+        public static final int G12=0x7f050014;
+        public static final int G13=0x7f050015;
+        public static final int G14=0x7f050016;
+        public static final int G15=0x7f050017;
+        public static final int P01=0x7f050020;
+        public static final int P02=0x7f050021;
+        public static final int P03=0x7f050022;
         public static final int action_settings=0x7f050003;
         public static final int app_name=0x7f050000;
-        public static final int bantuan=0x7f050018;
-        public static final int gejala=0x7f050007;
+        public static final int bantuan=0x7f050019;
+        public static final int gejala=0x7f050008;
+        public static final int hasil=0x7f050006;
         public static final int hello_world=0x7f050001;
         public static final int judul=0x7f050002;
-        public static final int kampus=0x7f050022;
-        public static final int profil=0x7f05001e;
-        public static final int title_activity_bantuan=0x7f050017;
-        public static final int title_activity_gejala=0x7f050006;
-        public static final int title_activity_profil=0x7f05001d;
+        public static final int kampus=0x7f050023;
+        public static final int profil=0x7f05001f;
+        public static final int title_activity_bantuan=0x7f050018;
+        public static final int title_activity_gejala=0x7f050007;
+        public static final int title_activity_profil=0x7f05001e;
         public static final int title_activity_quest=0x7f050004;
         public static final int title_activity_result=0x7f050005;
     }

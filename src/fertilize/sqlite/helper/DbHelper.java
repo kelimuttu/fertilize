@@ -55,6 +55,26 @@ public class DbHelper extends SQLiteOpenHelper {
 		this.addQuestion(q4);
 		Question q5=new Question("Apakah berat badan Anda naik?","Tidak", "Tidak Tahu", "Sedikit Yakin", "Cukup Yakin", "Yakin", "Sangat Yakin", 0.2);
 		this.addQuestion(q5);
+		Question q6=new Question("Apakah saat Anda berhubungan intim terasa nyeri?","Tidak", "Tidak Tahu", "Sedikit Yakin", "Cukup Yakin", "Yakin", "Sangat Yakin", 0.2);
+		this.addQuestion(q6);
+		Question q7=new Question("Apakah Anda mengalami keputihan?","Tidak", "Tidak Tahu", "Sedikit Yakin", "Cukup Yakin", "Yakin", "Sangat Yakin", 0.8);
+		this.addQuestion(q7);
+		Question q8=new Question("Apakah Anda sering emosi atau stress?","Tidak", "Tidak Tahu", "Sedikit Yakin", "Cukup Yakin", "Yakin", "Sangat Yakin", 0.2);
+		this.addQuestion(q8);
+		Question q9=new Question("Apakah Anda merasa kurang semangat saat melakukan aktifitas sehari-hari?","Tidak", "Tidak Tahu", "Sedikit Yakin", "Cukup Yakin", "Yakin", "Sangat Yakin", 0.2);
+		this.addQuestion(q9);
+		Question q10=new Question("Apakah Anda sering merasa lelah setelah melakukan aktifitas?","Tidak", "Tidak Tahu", "Sedikit Yakin", "Cukup Yakin", "Yakin", "Sangat Yakin", 0.1);
+		this.addQuestion(q10);
+		Question q11=new Question("Apakah terjadi perubahan kulit, seperti timbulnya jerawat yang banyak?","Tidak", "Tidak Tahu", "Sedikit Yakin", "Cukup Yakin", "Yakin", "Sangat Yakin", 0.4);
+		this.addQuestion(q11);
+		Question q12=new Question("Apakah terjadi perubahan dalam keinginan seksual?","Tidak", "Tidak Tahu", "Sedikit Yakin", "Cukup Yakin", "Yakin", "Sangat Yakin", 0.2);
+		this.addQuestion(q12);
+		Question q13=new Question("Apakah tumbuh rambut gelap pada bibir atau dada atau dagu Anda?","Tidak", "Tidak Tahu", "Sedikit Yakin", "Cukup Yakin", "Yakin", "Sangat Yakin", 0.5);
+		this.addQuestion(q13);
+		Question q14=new Question("Apakah rambut Anda rontok?","Tidak", "Tidak Tahu", "Sedikit Yakin", "Cukup Yakin", "Yakin", "Sangat Yakin", 0.4);
+		this.addQuestion(q14);
+		Question q15=new Question("Apakah payudara Anda keluar cairan seperti ASI padahal Anda sedang tidak menyusui?","Tidak", "Tidak Tahu", "Sedikit Yakin", "Cukup Yakin", "Yakin", "Sangat Yakin", 0.8);
+		this.addQuestion(q15);
 	}
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldV, int newV) {

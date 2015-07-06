@@ -3,10 +3,11 @@
 
     <string name="app_name">Infertilitas</string>
     <string name="hello_world">Hello world!</string>
-    <string name="judul">SISTEM PAKAR INFERTILITAS PADA WANITA</string>
+    <string name="judul">SISTEM PENUNJANG KEPUTUSAN UNTUK MENGETAHUI INFERTILITAS PADA WANITA</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_quest">Diagnosa</string>
     <string name="title_activity_result">Hasil Diagnosa</string>
+    <string name="hasil">Hasil Diagnosa dengan Presentase Keyakinan : </string>
     <string name="title_activity_gejala">Gejala</string>
     <string name="gejala">GEJALA UMUM INFERTILITAS PADA WANITA</string>
     <string name="G01">1. Haid Terasa Sakit/Kram</string>
@@ -32,9 +33,9 @@
     <string name="B04">4. Klik menu Profil untuk mengetahui profil penulis</string>
     <string name="title_activity_profil">Profil</string>
     <string name="profil">SISTEM PENUNJANG KEPUTUSAN BERBASIS ANDROID UNTUK MENGETAHUI INFERTILISASI PADA WANITA MENGGUNAKAN METODE CERTAINTY FACTOR</string>
-    <string name="P01">Nama				: Gina Lufitadewi</string>
-    <string name="P02">NIM				: A11.2011.06146</string>
-    <string name="P03">Dosen Pembimbing	: Aripin, M.Kom</string>
+    <string name="P01">Nama 			: Gina Lufitadewi</string>
+    <string name="P02">NIM 				: A11.2011.06146</string>
+    <string name="P03">Dosen Pembimbing : Aripin, M.Kom</string>
     <string name="kampus">Universitas Dian Nuswantoro Semarang</string>
 
 </resources>

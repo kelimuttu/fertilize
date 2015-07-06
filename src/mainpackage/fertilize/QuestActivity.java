@@ -80,7 +80,7 @@ public class QuestActivity extends Activity {
 					score = cfcombine * 100;
 				}
 				
-				if(qid<5){					
+				if(qid < QuestList.size()){					
 					cf = cfpakar * cfuser;
 					currentQ=QuestList.get(qid);
 					setQuestionView();

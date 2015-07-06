@@ -34,7 +34,7 @@ public class Result extends Activity {
 				double score= b.getDouble("score");
 				int precentage = (int) score;
 				//int score= b.getInt("score");
-				t.setText(String.valueOf(precentage));
+				t.setText(String.valueOf(precentage) + " %");
 				//t.setText(score);
 				
 				if( (precentage > 0) && (precentage <= 50)){
