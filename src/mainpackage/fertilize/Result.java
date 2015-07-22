@@ -38,13 +38,13 @@ public class Result extends Activity {
 				//t.setText(score);
 				
 				if( (precentage > 0) && (precentage <= 50)){
-					thasil.setText("Kemungkinan kecil");
+					thasil.setText("Anda berkemungkinan kecil mengalami infertilitas");
 				} else if((precentage > 50) && (precentage <= 79)){
-					thasil.setText("Kemungkinan");
+					thasil.setText("Anda berkemungkinan cukup mengalami infertilitas");
 				} else if((precentage > 79) && (precentage <= 99)){
-					thasil.setText("Kemungkinan besar");
+					thasil.setText("Anda berkemungkinan besar mengalami infertilitas");
 				} else if(precentage == 100){
-					thasil.setText("Sangat yakin!");
+					thasil.setText("Anda diyakini mengalami infertilitas");
 				}
 	}
 

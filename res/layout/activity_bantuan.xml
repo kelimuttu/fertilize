@@ -8,11 +8,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mainpackage.fertilize.Bantuan" >
-
+    
     <TextView android:text="@string/bantuan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView2" />
 
     <TextView
@@ -50,5 +51,7 @@
         android:layout_below="@+id/textView2"
         android:layout_marginTop="35dp"
         android:text="@string/B01" />
+
+    
 
 </RelativeLayout>
